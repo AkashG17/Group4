@@ -67,12 +67,12 @@ public class TestNGVerifyLogin {
 		    
 	}
 	
-	@AfterMethod
-	public void afterMethod() throws InterruptedException
-	{
-		headerpage=new Headerpage(driver);
-		Thread.sleep(2000);
-		headerpage.clicklogout();
-	}
+//	@AfterMethod
+//	public void afterMethod() throws InterruptedException
+//	{
+//		headerpage=new Headerpage(driver);
+//		Thread.sleep(2000);
+//		headerpage.clicklogout();
+//	}
 
 }
