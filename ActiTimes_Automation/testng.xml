@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="2" parallel="tests">
+<parameter name="browserName" value="browser"/>
+  <test  name="ChromeTest">
+    <classes>
+      <class name="testClasses.TestNGVerifyReportAndUsers"/>
+      <class name="testClasses.TestNGAssertionLogin"/>    
+             
+    </classes>
+  </test> <!-- Test -->
+ <test  name="FirefoxTest">
+    <classes>
+      <class name="testClasses.TestNGVerifyReportAndUsers"/>
+      <class name="testClasses.TestNGAssertionLogin"/>    
+            
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

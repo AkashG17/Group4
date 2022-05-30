@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browserName" value="browser"/>
+  <test thread-count="2" parallel="tests" name="FirefoxTest(failed)">
+    <classes>
+      <class name="testClasses.TestNGVerifyReportAndUsers">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="usersPageValidation"/>
+          <include name="afterClass"/>
+          <include name="afterTest"/>
+          <include name="reportPageValidation"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testClasses.TestNGVerifyReportAndUsers -->
+      <class name="testClasses.TestNGAssertionLogin">
+        <methods>
+          <include name="afterTest"/>
+          <include name="verufyTimeTrackTab"/>
+          <include name="afterMethod"/>
+          <include name="launchBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="verifyingTaskTab"/>
+          <include name="browserLaunch"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testClasses.TestNGAssertionLogin -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="2" parallel="tests" name="ChromeTest(failed)">
+    <classes>
+      <class name="testClasses.TestNGVerifyReportAndUsers">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="usersPageValidation"/>
+          <include name="afterClass"/>
+          <include name="afterTest"/>
+          <include name="reportPageValidation"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testClasses.TestNGVerifyReportAndUsers -->
+      <class name="testClasses.TestNGAssertionLogin">
+        <methods>
+          <include name="afterTest"/>
+          <include name="verufyTimeTrackTab"/>
+          <include name="afterMethod"/>
+          <include name="launchBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="verifyingTaskTab"/>
+          <include name="browserLaunch"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testClasses.TestNGAssertionLogin -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
